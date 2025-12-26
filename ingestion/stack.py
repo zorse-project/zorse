@@ -113,12 +113,15 @@ def load_stack(language: str):
             "repo_name": row["repo_name"],
             "file_path": row["file_path"],
             "language": row["language"],
-            "license": row["license_type"],  # Use license_type as license
+            "extension": row.get("extension", ""),
+            "license_type": row["license_type"],  # License type (string)
+            "licenses": row.get("licenses", []),  # Array of licenses
             "host_url": row["host_url"],
             "source": "stack",
             "num_tokens": num_tokens,
             "revision_id": row["revision_id"],
             "commit_date": row["commit_date"],
+            "branch": row.get("branch", ""),  # Include branch
         }
         
         yield normalized_row
