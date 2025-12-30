@@ -48,3 +48,4 @@ Zorse is governed by a Technical Steering Committee (TSC). Its role is to:
 | Gabriel    | Gordon-Hall  | gabriel@bloop.ai  |
 | Louis    | Knight-Webb  | louis@bloop.ai  |
 | Stephen    | Hodges  | shodges@averisource.com  |
+| Nolan    | Lwin      | naingoolwin.astrio@gmail.com  |
